@@ -10,7 +10,10 @@
 
 body {
     font-family: var(--fuente-principal);
-    color: var(--color-azul);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    position: relative;
 }
 
 header {
@@ -63,4 +66,54 @@ nav .nav-login {
 
 nav .nav-login:hover {
     box-shadow: 0 0 3px var(--color-azul);
+}
+
+/** ==== Estilos de Footer ===**/
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-claro);
+    padding: 15px 0;
+}
+
+footer .pais {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--color-gris);
+}
+
+.footer-links {
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.footer-links ul:first-child {
+    float: left;
+}
+
+.footer-links ul:last-child {
+    float: right;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links ul a {
+    text-decoration: none;
+    color: var(--color-negro);
+    font-size: 14px;
+}
+
+.footer-links ul a:hover {
+    text-decoration: underline;
 }
